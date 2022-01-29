@@ -1,5 +1,7 @@
 # drawSvg
 
+*This is fork to drawSvg, in which we try to readjust its coordinate system to follow SVG standard*
+
 A Python 3 library for programmatically generating SVG images (vector drawings) and rendering them or displaying them in a Jupyter notebook.
 
 Most common SVG tags are supported and others can easily be added by writing a small subclass of `DrawableBasicElement` or `DrawableParentElement`.
