@@ -224,7 +224,6 @@ class Use(DrawingBasicElement):
         that reference it. '''
     TAG_NAME = 'use'
     def __init__(self, otherElem, x, y, **kwargs):
-        y = -y
         if isinstance(otherElem, str) and not otherElem.startswith('#'):
             otherElem = '#' + otherElem
         super().__init__(xlink__href=otherElem, x=x, y=y, **kwargs)
@@ -371,7 +370,7 @@ class Image(DrawingBasicElement):
         else:
             encData = base64.b64encode(data).decode(encoding='ascii')
             uri = 'data:{};base64,{}'.format(mimeType, encData)
-        super().__init__(x=x, y=-y-height, width=width, height=height,
+        super().__init__(x=x, y=y, width=width, height=height,
                          xlink__href=uri, **kwargs)
 
 class Text(DrawingParentElement):
@@ -412,10 +411,6 @@ class Text(DrawingParentElement):
                 raise TypeError(
                         "__init__() missing required arguments: 'x' and 'y' "
                         "are required unless 'path' is specified")
-            try:
-                y = -y
-            except TypeError:
-                pass
         else:
             if x is not None or y is not None:
                 raise TypeError(
@@ -558,10 +553,6 @@ class Rectangle(DrawingBasicElement):
         SVG node e.g. fill="red", stroke="#ff4477", stroke_width=2. '''
     TAG_NAME = 'rect'
     def __init__(self, x, y, width, height, **kwargs):
-        try:
-            y = -y-height
-        except TypeError:
-            pass
         super().__init__(x=x, y=y, width=width, height=height,
             **kwargs)
 
@@ -573,7 +564,7 @@ class Circle(DrawingBasicElement):
     TAG_NAME = 'circle'
     def __init__(self, cx, cy, r, **kwargs):
         try:
-            cy = -cy
+            cy = cy
         except TypeError:
             pass
         super().__init__(cx=cx, cy=cy, r=r, **kwargs)
@@ -586,7 +577,7 @@ class Ellipse(DrawingBasicElement):
     TAG_NAME = 'ellipse'
     def __init__(self, cx, cy, rx, ry, **kwargs):
         try:
-            cy = -cy
+            cy = cy
         except TypeError:
             pass
         super().__init__(cx=cx, cy=cy, rx=rx, ry=ry, **kwargs)
@@ -645,31 +636,31 @@ class Path(DrawingBasicElement):
             commandStr = commandStr + ','.join(map(str, args))
         self.args['d'] += commandStr
         return self
-    def M(self, x, y): return self.append('M', x, -y)
-    def m(self, dx, dy): return self.append('m', dx, -dy)
-    def L(self, x, y): return self.append('L', x, -y)
-    def l(self, dx, dy): return self.append('l', dx, -dy)
+    def M(self, x, y): return self.append('M', x, y)
+    def m(self, dx, dy): return self.append('m', dx, dy)
+    def L(self, x, y): return self.append('L', x, y)
+    def l(self, dx, dy): return self.append('l', dx, dy)
     def H(self, x): return self.append('H', x)
     def h(self, dx): return self.append('h', dx)
-    def V(self, y): return self.append('V', -y)
-    def v(self, dy): return self.append('v', -dy)
+    def V(self, y): return self.append('V', y)
+    def v(self, dy): return self.append('v', dy)
     def Z(self): return self.append('Z')
     def C(self, cx1, cy1, cx2, cy2, ex, ey):
-        return self.append('C', cx1, -cy1, cx2, -cy2, ex, -ey)
+        return self.append('C', cx1, cy1, cx2, cy2, ex, ey)
     def c(self, cx1, cy1, cx2, cy2, ex, ey):
-        return self.append('c', cx1, -cy1, cx2, -cy2, ex, -ey)
-    def S(self, cx2, cy2, ex, ey): return self.append('S', cx2, -cy2, ex, -ey)
-    def s(self, cx2, cy2, ex, ey): return self.append('s', cx2, -cy2, ex, -ey)
-    def Q(self, cx, cy, ex, ey): return self.append('Q', cx, -cy, ex, -ey)
-    def q(self, cx, cy, ex, ey): return self.append('q', cx, -cy, ex, -ey)
-    def T(self, ex, ey): return self.append('T', ex, -ey)
-    def t(self, ex, ey): return self.append('t', ex, -ey)
+        return self.append('c', cx1, cy1, cx2, cy2, ex, ey)
+    def S(self, cx2, cy2, ex, ey): return self.append('S', cx2, cy2, ex, ey)
+    def s(self, cx2, cy2, ex, ey): return self.append('s', cx2, cy2, ex, ey)
+    def Q(self, cx, cy, ex, ey): return self.append('Q', cx, cy, ex, ey)
+    def q(self, cx, cy, ex, ey): return self.append('q', cx, cy, ex, ey)
+    def T(self, ex, ey): return self.append('T', ex, ey)
+    def t(self, ex, ey): return self.append('t', ex, ey)
     def A(self, rx, ry, rot, largeArc, sweep, ex, ey):
         return self.append('A', rx, ry, rot, int(bool(largeArc)),
-                    int(bool(sweep)), ex, -ey)
+                    int(bool(sweep)), ex, ey)
     def a(self, rx, ry, rot, largeArc, sweep, ex, ey):
         return self.append('a', rx, ry, rot, int(bool(largeArc)),
-                    int(bool(sweep)), ex, -ey)
+                    int(bool(sweep)), ex, ey)
     def arc(self, cx, cy, r, startDeg, endDeg, cw=False, includeM=True,
             includeL=False):
         ''' Uses A() to draw a circular arc '''

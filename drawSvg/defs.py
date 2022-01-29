@@ -56,6 +56,11 @@ class GradientStop(DrawingDefSub):
     TAG_NAME = 'stop'
     hasContent = False
 
+class Pattern(DrawingDef):
+    ''' A pattern to apply to geometry
+        For example a blur filter. '''
+    TAG_NAME = 'pattern'
+
 class ClipPath(DrawingDef):
     ''' A shape used to crop another element by not drawing outside of this
         shape
