@@ -662,16 +662,18 @@ class Path(DrawingBasicElement):
         return self.append('a', rx, ry, rot, int(bool(largeArc)),
                     int(bool(sweep)), ex, ey)
     def arc(self, cx, cy, r, startDeg, endDeg, cw=False, includeM=True,
-            includeL=False):
+            includeL=False, pie=False):
         ''' Uses A() to draw a circular arc '''
         largeArc = (endDeg - startDeg) % 360 > 180
         startRad, endRad = startDeg*math.pi/180, endDeg*math.pi/180
         sx, sy = r*math.cos(startRad), r*math.sin(startRad)
         ex, ey = r*math.cos(endRad), r*math.sin(endRad)
+
         if includeL:
             self.L(cx+sx, cy+sy)
         elif includeM:
             self.M(cx+sx, cy+sy)
+        
         return self.A(r, r, 0, largeArc ^ cw, cw, cx+ex, cy+ey)
 
 class Lines(Path):
@@ -705,3 +707,14 @@ class Arc(Path):
         super().__init__(d='', **kwargs)
         self.arc(cx, cy, r, startDeg, endDeg, cw=cw, includeM=True)
 
+class Pie(Path):
+    ''' A Pie: Perfect circle (not an ellipse)
+
+        Additional keyword arguments are output as additional properties to the
+        SVG node e.g. fill="red", stroke="#ff4477", stroke_width=2. '''
+    def __init__(self, cx, cy, r, startDeg, endDeg, **kwargs):
+        super().__init__(d='', **kwargs)
+        startRad, endRad = startDeg*math.pi/180, endDeg*math.pi/180
+        self.M(cx+r*math.cos(startRad),cy-r*math.sin(startRad))
+        self.A(rx=r, ry=r, rot=0, largeArc=1, sweep=1, ex=cx+r*math.cos(endRad), ey=cy-r*math.sin(endRad))
+        self.L(cx,cy)
