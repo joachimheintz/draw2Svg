@@ -35,4 +35,4 @@ $ brew install cairo
 ```
 
 For more detailed manuals, go to our website:
-https://spiffy-chimera-617bc4.netlify.app/
+https://draw2svg.netlify.app/
