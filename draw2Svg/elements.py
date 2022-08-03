@@ -718,3 +718,4 @@ class Pie(Path):
         self.M(cx+r*math.cos(startRad),cy-r*math.sin(startRad))
         self.A(rx=r, ry=r, rot=0, largeArc=1, sweep=1, ex=cx+r*math.cos(endRad), ey=cy-r*math.sin(endRad))
         self.L(cx,cy)
+        self.Z()

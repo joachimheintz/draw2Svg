@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import logging
 logger = logging.getLogger(__name__)
 
-version = '1.8.3'
+version = '1.8.4'
 
 try:
     with open('README.md', 'r') as f:
@@ -12,16 +12,16 @@ except:
     long_desc = None
 
 setup(
-    name = 'drawSvg',
+    name = 'draw2Svg',
     packages = find_packages(),
     version = version,
     description = 'A Python 3 library for programmatically generating SVG images (vector drawings) and rendering them or displaying them in a Jupyter notebook',
     long_description = long_desc,
     long_description_content_type = 'text/markdown',
-    author = 'Casey Duckering',
+    author = 'Casey Duckering, Ahmad Aufar',
     #author_email = '',
     url = 'https://github.com/cduck/drawSvg',
-    download_url = 'https://github.com/cduck/drawSvg/archive/{}.tar.gz'.format(version),
+    download_url = 'https://github.com/aufarah/New-drawSvg/archive/{}.tar.gz'.format(version),
     keywords = ['SVG', 'draw', 'graphics', 'iPython', 'Jupyter', 'widget'],
     classifiers = [
         'License :: OSI Approved :: MIT License',
