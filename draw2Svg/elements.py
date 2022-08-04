@@ -673,8 +673,9 @@ class Path(DrawingBasicElement):
             self.L(cx+sx, cy+sy)
         elif includeM:
             self.M(cx+sx, cy+sy)
-        
-        return self.A(r, r, 0, largeArc ^ cw, cw, cx+ex, cy+ey)
+
+        self.M(cx+r*math.cos(startRad),cy-r*math.sin(startRad))
+        return self.A(rx=r, ry=r, rot=0, largeArc=1, sweep=1, ex=cx+r*math.cos(endRad), ey=cy-r*math.sin(endRad))
 
 class Lines(Path):
     ''' A sequence of connected lines (or a polygon)

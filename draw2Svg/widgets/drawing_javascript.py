@@ -51,7 +51,7 @@ define('drawingview', ['@jupyter-widgets/base'], function(widgets) {
             this.send({
                 name: name,
                 x: svg_pt.x,
-                y: -svg_pt.y,
+                y: svg_pt.y,
                 type: e.type,
                 button: e.button,
                 buttons: e.buttons,
