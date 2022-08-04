@@ -10,10 +10,10 @@ An interactive [Jupyter notebook](https://jupyter.org) widget, `drawSvg.widgets.
 
 # Install
 
-drawSvg is available on PyPI:
+draw2Svg is (not available yet) available on PyPI, but on test PyPI:
 
 ```
-$ pip3 install drawSvg
+$ pip install -i https://test.pypi.org/simple/ draw2Svg
 ```
 
 ## Prerequisites
