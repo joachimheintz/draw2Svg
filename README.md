@@ -10,10 +10,10 @@ An interactive [Jupyter notebook](https://jupyter.org) widget, `drawSvg.widgets.
 
 # Install
 
-draw2Svg is (not available yet) available on PyPI, but on test PyPI:
+draw2Svg is available on PyPI:
 
 ```
-$ pip install -i https://test.pypi.org/simple/ draw2Svg
+$ pip install draw2Svg
 ```
 
 ## Prerequisites
@@ -33,6 +33,15 @@ Using [homebrew](https://brew.sh/):
 ```
 $ brew install cairo
 ```
+
+## Example result
+This is sample application of this library to do some generative art exercise [here](https://github.com/mattdesl/workshop-generative-art/blob/master/docs/exercises.md)  
+
+Pie poster:  
+![svg](examples/exerc1.svg)
+
+Sol Le Witt styled poster:
+![svg](examples/exerc2.svg)
 
 For more detailed manuals, go to our website:
 https://draw2svg.netlify.app/

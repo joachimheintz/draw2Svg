@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="800" height="800" viewBox="0 0 800 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="white" />
+<path d="M320.0,0.0 L0.0,160.0 L0.0,800 L320.0,800 Z" fill="#b1b7d1" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M480.0,160.0 L800.0,0.0 L800.0,800 L480.0,800 Z" fill="#7a6174" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M640.0,0.0 L0.0,320.0 L0.0,800 L640.0,800 Z" fill="#9b9fb5" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M800.0,320.0 L160.0,0.0 L160.0,800 L800.0,800 Z" fill="#8c7284" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M160.0,0.0 L640.0,480.0 L640.0,800 L160.0,800 Z" fill="#b1b7d1" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M160.0,160.0 L480.0,320.0 L480.0,800 L160.0,800 Z" fill="#7a6174" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M320.0,320.0 L160.0,160.0 L160.0,800 L320.0,800 Z" fill="#b1b7d1" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M480.0,320.0 L640.0,160.0 L640.0,800 L480.0,800 Z" fill="#8c7284" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M800.0,0.0 L640.0,480.0 L640.0,800 L800.0,800 Z" fill="#d1b1c8" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M0.0,0.0 L640.0,640.0 L640.0,800 L0.0,800 Z" fill="#9b9fb5" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M0.0,160.0 L800.0,480.0 L800.0,800 L0.0,800 Z" fill="#8c7284" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M480.0,0.0 L160.0,640.0 L160.0,800 L480.0,800 Z" fill="#b1b7d1" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M640.0,160.0 L480.0,480.0 L480.0,800 L640.0,800 Z" fill="#7a6174" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M800.0,480.0 L0.0,160.0 L0.0,800 L800.0,800 Z" fill="#7a6174" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M800.0,640.0 L0.0,0.0 L0.0,800 L800.0,800 Z" fill="#d1b1c8" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M0.0,320.0 L160.0,480.0 L160.0,800 L0.0,800 Z" fill="#d1b1c8" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M0.0,480.0 L800.0,320.0 L800.0,800 L0.0,800 Z" fill="#9b9fb5" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M160.0,320.0 L640.0,480.0 L640.0,800 L160.0,800 Z" fill="#8c7284" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M160.0,480.0 L800.0,320.0 L800.0,800 L160.0,800 Z" fill="#d1b1c8" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M320.0,160.0 L800.0,640.0 L800.0,800 L320.0,800 Z" fill="#7a6174" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M320.0,480.0 L480.0,320.0 L480.0,800 L320.0,800 Z" fill="#b1b7d1" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M480.0,480.0 L320.0,320.0 L320.0,800 L480.0,800 Z" fill="#9b9fb5" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M480.0,800.0 L640.0,0.0 L640.0,800 L480.0,800 Z" fill="#9b9fb5" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M640.0,800.0 L480.0,0.0 L480.0,800 L640.0,800 Z" fill="#7a6174" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M640.0,320.0 L800.0,640.0 L800.0,800 L640.0,800 Z" fill="#b1b7d1" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M800.0,160.0 L0.0,800.0 L0.0,800 L800.0,800 Z" fill="#b1b7d1" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M800.0,800.0 L480.0,160.0 L480.0,800 L800.0,800 Z" fill="#b1b7d1" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M0.0,800.0 L160.0,320.0 L160.0,800 L0.0,800 Z" fill="#d1b1c8" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M160.0,640.0 L480.0,480.0 L480.0,800 L160.0,800 Z" fill="#d1b1c8" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M320.0,640.0 L640.0,480.0 L640.0,800 L320.0,800 Z" fill="#d1b1c8" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M480.0,640.0 L800.0,480.0 L800.0,800 L480.0,800 Z" fill="#7a6174" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M640.0,480.0 L480.0,640.0 L480.0,800 L640.0,800 Z" fill="#8c7284" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M0.0,640.0 L160.0,800.0 L160.0,800 L0.0,800 Z" fill="#d1b1c8" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M160.0,800.0 L640.0,640.0 L640.0,800 L160.0,800 Z" fill="#8c7284" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M320.0,800.0 L640.0,640.0 L640.0,800 L320.0,800 Z" fill="#8c7284" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+<path d="M640.0,640.0 L800.0,800.0 L800.0,800 L640.0,800 Z" fill="#8c7284" stroke="white" stroke-width="8" paint-order="fill" stroke-linejoin="miter" stroke-miterlimit="1" />
+</svg>
